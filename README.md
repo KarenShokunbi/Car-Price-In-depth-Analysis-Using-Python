@@ -11,16 +11,15 @@ The work is organised into two main stages: data inspection and cleaning checks,
 - Communicate the patterns observed and identify areas for further analysis.
   
 ## Tools and Libraries
- Python - analysis workflow
- Pandas - data loading, inspection, and tabular analysis
- NumPy - numerical computing
- Matplotlib - plotting
- Seaborn - statistical visualisation
+ - Python - analysis workflow
+ - Pandas - data loading, inspection, and tabular analysis
+ - NumPy - numerical computing
+ - Matplotlib - plotting
+ - Seaborn - statistical visualisation
 
 ## Methodology
 
-1. Data inspection
-   
+1. Data inspection   
 Pandas was used to load and inspect the dataset. The workflow included:
 - Reviewing the dataset's data types and non-null counts with info().
 - Checking the number of rows and columns with shape.
@@ -30,20 +29,19 @@ Pandas was used to load and inspect the dataset. The workflow included:
 - Reviewing numerical summaries with describe().
 - Inspecting unique values in selected categorical columns.
 These checks help assess data structure and quality before interpreting the visualisations.
-Documentation note: The notebook contains checks for missing values and duplicates, but the visible code does not show an explicit removal or imputation step. Only describe those records as handled if you performed and verified those operations.
+The notebook contains checks for missing values and duplicates.
 
 2. Exploratory visualisation
-
-Matplotlib and Seaborn were used to create charts for selected variables:
-Visualisation	Variables	Purpose
-Bar chart	was used to explore price values across body-style records
-Scatter plot was used to examine the association between engine size and price
-Histogram was used to inspect the distribution of listed car prices
-Count plot was used to compare the number of records in each fuel category
-Bar chart	was used to explore price values across drive-wheel records
-Scatter plot with regression line	was used to examine the relationship between horsepower and price
-Line plot	was used to compare price patterns across engine-location categories
-Count plot was used to compare the number of records by door-number category
+- Matplotlib and Seaborn were used to create charts for selected variables:
+- Visualisation	Variables	Purpose
+- Bar chart	was used to explore price values across body-style records
+- Scatter plot was used to examine the association between engine size and price
+- Histogram was used to inspect the distribution of listed car prices
+- Count plot was used to compare the number of records in each fuel category
+- Bar chart	was used to explore price values across drive-wheel records
+- Scatter plot with regression line	was used to examine the relationship between horsepower and price
+- Line plot	was used to compare price patterns across engine-location categories
+- Count plot was used to compare the number of records by door-number category
 
 ## Findings Recorded in the Notebook
 The following are the patterns described in the original notebook. They should be treated as preliminary observations rather than proof of causation.
@@ -58,4 +56,5 @@ The following are the patterns described in the original notebook. They should b
 
 ## Conclusion
 This project demonstrates a Python workflow for inspecting a tabular dataset and using exploratory visualisations to investigate how vehicle characteristics relate to car prices. The notebook explores numerical features such as engine size and horsepower, alongside categorical features such as body style, fuel type, drive-wheel type, engine location, and door number.
+
 The analysis provides a starting point for further investigation. A stronger next iteration would calculate group-level price summaries, quantify relationships, check outliers, and validate the findings before using them to support pricing decisions.
