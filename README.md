@@ -28,7 +28,9 @@ Pandas was used to load and inspect the dataset. The workflow included:
 - Checking missing-value counts with isnull().sum().
 - Reviewing numerical summaries with describe().
 - Inspecting unique values in selected categorical columns.
+  
 These checks help assess data structure and quality before interpreting the visualisations.
+
 The notebook contains checks for missing values and duplicates.
 
 2. Exploratory visualisation
